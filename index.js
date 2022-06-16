@@ -1,4 +1,4 @@
-function getGithubOrgs(url) {
+/*function getGithubOrgs(url) {
   return fetch(url).then((response) => response.json());
 }
 
@@ -9,4 +9,11 @@ getGithubOrgs("https://reqres.in/api/users", {
   })
 }).then((res) => {
   return res.json()
-});
+});*/
+
+let pos = {
+  lon: -45,
+  lat: 50
+};
+
+console.log(pos)
