@@ -1,19 +1,8 @@
-/*function getGithubOrgs(url) {
-  return fetch(url).then((response) => response.json());
+const get_url = 'https://api.wheretheiss.at/v1/satellites/25544'
+
+async function getData () {
+  const response = await fetch(get_url);
+  const data = await response.json();
+  console.log(data)
 }
-
-getGithubOrgs("https://reqres.in/api/users", {
-  method: 'POST',
-  body: JSON.stringify({
-    name: 'User 1'
-  })
-}).then((res) => {
-  return res.json()
-});*/
-
-let pos = {
-  lon: -45,
-  lat: 50
-};
-
-console.log(pos)
+getData();
